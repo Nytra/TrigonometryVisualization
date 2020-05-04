@@ -9,6 +9,6 @@ A demo of the program in action.
 The green line is the cosine of the angle theta enclosed by the positive x-axis and the white line in the anticlockwise direction
 The blue line is the sine of the same angle.
 
-It works by taking the position of the mouse cursor, normalizing it so that the origin is the center of the circle (if the mouse cursor is on the left half of the circle, the normalized x value would be negative) and passing those values to some code that uses the arctan() function to calculate the angle theta. i had to add some special cases to get this to work correctly. 
+It works by taking the position of the mouse cursor, normalizing both coordinates so that the origin is the center of the circle (if the mouse cursor is on the left half of the circle, the normalized x value would be negative) and making that value a percentage of the circle radius between -1 and 1. then passing those values to some code that uses the arctan() function to calculate the angle theta. i had to add some special cases to get this to work correctly. 
 
 then passing theta to sin() and cos() to get the point on the circle, and then drawing a line from the center of the circle to that point
