@@ -27,9 +27,10 @@ def demoTrigonometryVisualization():
 
         xLength = (mousePos[0] - initialX) / CIRCLE_RADIUS
         yLength = (initialY - mousePos[1]) / CIRCLE_RADIUS
-        xLength = max(-1, min(xLength, 1))
+        xLength = max(-1, min(xLength, 1)) # clamp these values between -1 and 1
         yLength = max(-1 , min(yLength, 1))
 
+        # enter special cases. the trig functions used here are probably wrong or something.
         if xLength == 0 or yLength == 0:
             theta = 0
         elif xLength > 0 and yLength > 0:
